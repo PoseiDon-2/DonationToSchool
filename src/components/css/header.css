@@ -1,0 +1,228 @@
+.donation-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #6DBDFF;
+    padding: 40px 20px;
+    margin-top: 80px;
+}
+
+.donation-left {
+    max-width: 50%;
+}
+
+.donation-left h2 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.donation-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.search-request, .create-request {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-request {
+    background-color: #ffa332;
+    color: white;
+}
+
+.search-request:hover {
+    background-color: #e08844;
+}
+
+.create-request {
+    background-color: #ffffff;
+    color: black;
+}
+
+.create-request:hover {
+    background-color: #dedede;
+}
+
+/* Search Box */
+.donation-right {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    max-width: 50%;
+}
+
+.donation-search {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #2563eb;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.donation-left .htext-1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.donation-right .htext-1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.donation-right .htext-2 {
+    margin-bottom: 10px;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #1976D2;
+}
+
+/* Hamburger Menu Icon (ซ่อนไว้ก่อนใน desktop) */
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+
+/* แท็บเล็ต (iPad) - max-width: 1024px */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 12px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .donation-section {
+        flex-direction: row;
+        padding: 30px 15px;
+    }
+
+    .donation-left {
+        max-width: 60%;
+    }
+
+    .donation-right {
+        width: 35%;
+    }
+
+    .donation-left .htext-1 {
+        font-size: 1.8rem;
+    }
+
+    .donation-buttons {
+        gap: 8px;
+    }
+
+    .search-request, .create-request {
+        padding: 8px 16px;
+    }
+}
+
+/* มือถือ - max-width: 767px */
+@media (max-width: 767px) {
+    /* Navbar */
+    .navbar {
+        flex-wrap: wrap;
+        position: relative;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        display: none; /* ซ่อนเมนูปกติ */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #ffffff;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .menu.active {
+        display: flex; /* แสดงเมนูเมื่อ active */
+    }
+
+    .menu li {
+        padding: 10px 20px;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .login, .register {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* Donation Section */
+    .donation-section {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .donation-left {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .donation-left .htext-1 {
+        font-size: 1.5rem;
+    }
+
+    .donation-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .donation-right {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .donation-search {
+        width: 100%;
+    }
+
+    .search-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

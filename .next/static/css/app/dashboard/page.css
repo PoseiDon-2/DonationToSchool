@@ -1,0 +1,81 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/css/nav.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+/* ตั้งค่าพื้นฐานสำหรับ Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;  /* สีพื้นหลัง */
+    padding: 15px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed; /* ยึดตำแหน่งให้คงที่ */
+    top: 0;  /* ให้แถบเมนูอยู่ด้านบนสุด */
+    left: 0;
+    width: 100%;  /* ให้เมนูยาวเต็มหน้าจอ */
+    z-index: 1000; /* ป้องกันการทับซ้อน */
+}
+
+/* โลโก้ */
+.logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* เมนู */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #f39c12;
+}
+
+/* ปุ่มล็อกอินและลงทะเบียน */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 4%;
+}
+
+button {
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.login {
+    background-color: #3498db;
+    color: white;
+}
+
+.login:hover {
+    background-color: #2980b9;
+}
+
+.register {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.register:hover {
+    background-color: #27ae60;
+}
+
